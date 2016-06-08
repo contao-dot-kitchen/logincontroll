@@ -1,0 +1,35 @@
+{
+    "name":"sascha-brandhoff/logincontroll",
+    "description":"allows to adjust how often a member can login with the same account.",
+    "keywords":["contao","user", "login", "maxlogin"],
+    "type":"contao-module",
+    "homepage":"http://www.pixelspread.de/contao-modules/",
+    "license":"LGPLv3",
+    "authors":[
+	{
+	    "name":"Sascha Brandhoff",
+	    "email":"sascha.brandhoff@gmail.com",
+	    "homepage":"https://www.paypal.me/pixelSpreadde",
+	    "role":"Developer"
+	}
+    ],
+    "support":{
+	"email":"sascha.brandhoff@gmail.com",
+	"issues":"https://github.com/Sascha-Brandhoff/logincontroll/issues",
+	"source":"https://github.com/Sascha-Brandhoff/logincontroll"
+    },
+    "require":{
+	"php":">=5.3",
+	"contao/core": ">=3.4,<3.6"
+    },
+    "replace":{
+	"sascha-brandhoff/logincontroll":"self.version"
+    },
+    "extra":{
+	"contao":{
+	    "sources":{
+		"":"system/modules/logincontroll"
+	    }
+	}
+    }
+}
