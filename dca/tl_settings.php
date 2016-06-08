@@ -10,16 +10,14 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['addMOL'] = array
 	'exclude'                 => true,
 	'filter'                  => true,
 	'inputType'               => 'checkbox',
-	'eval'                    => array('submitOnChange'=>true),
-	'sql'                     => "char(1) NOT NULL default ''"
+	'eval'                    => array('submitOnChange'=>true)
 );
 
 $GLOBALS['TL_DCA']['tl_settings']['fields']['max_once_login'] = array
 (
 	'label'                   => &$GLOBALS['TL_LANG']['tl_settings']['max_once_login'],
-	'default'                 => 1,
+	'default'                 => '1',
 	'exclude'                 => true,
 	'inputType'               => 'text',
-	'eval'                    => array('mandatory'=>true, 'maxlength'=>10, 'rgxp'=>'digit'),
-	'sql'                     => "int(10) unsigned NOT NULL default '1'"
+	'eval'                    => array('mandatory'=>true, 'maxlength'=>10, 'rgxp'=>'digit')
 );
